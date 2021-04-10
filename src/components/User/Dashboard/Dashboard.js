@@ -65,7 +65,7 @@ const Dashboard = () => {
           <div className="mb-3 uppercase font-bold">Communities</div>
           <div className="flex flex-row items-center mt-2">
             <NavLink
-              to={`${path}/Beach-Protector`}
+              to={`${path}/community`}
               className="text-xs font-semibold inline-block py-2 px-3 uppercase rounded-full text-black-600 bg-blue-200 uppercase last:mr-0 mr-1 mb-3"
             >
               Beach Protector
@@ -94,7 +94,7 @@ const Dashboard = () => {
             path={`${path}/globalleaderboard`}
             component={GlobalLeaderboard}
           />
-          <Route path={`${path}/Beach-Protector`} component={Community} />
+          <Route path={`${path}/community`} component={Community} />
           <Redirect to={`${path}/feed`} />
         </Switch>
       </div>
